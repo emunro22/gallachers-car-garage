@@ -19,9 +19,9 @@ export const BUSINESS = {
   rating: 4.8,
   reviewCount: 40,
   hours: {
-    weekday: "Mon - Fri: 8:00am - 5:30pm",
-    saturday: "Sat: 8:00am - 12:30pm",
-    sunday: "Sun: Closed",
+    weekday: "Mon - Thu: 8:00am - 5:00pm",
+    friday: "Fri: 8:00am - 4:00pm",
+    weekend: "Sat & Sun: Closed",
   },
   domain: "gallacherscargarage.co.uk",
 };
@@ -33,13 +33,6 @@ export const SERVICES = [
     description:
       "Complete car and van repair services for all makes and models, including light goods vehicles up to 3.5 tonnes.",
     image: "/images/car-van-repairs.jpg",
-  },
-  {
-    title: "MOT Testing",
-    slug: "mot-testing",
-    description:
-      "Official MOT testing station. Book your annual MOT test with our certified technicians in Blantyre.",
-    image: "/images/mot-testing.jpg",
   },
   {
     title: "Full Servicing",
@@ -129,7 +122,7 @@ export const REVIEWS = [
     name: "Anand Vishnu",
     rating: 5,
     date: "a year ago",
-    text: "Excellent service and very reasonable price, will definitely recommend others. Best place to do MOTs.",
+    text: "Excellent service and very reasonable price, will definitely recommend others. Best place to do servicing.",
   },
   {
     name: "Adrian Winn",

@@ -4,8 +4,8 @@ import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Van Repair South Lanarkshire | Light Commercial Vehicle Repairs",
   description:
-    "Van repair in South Lanarkshire. All makes and models up to 3.5 tonnes. MOTs, servicing, brakes, clutches, engine work. Gallachers Car Garage, Blantyre. Call 01698 711111.",
-  keywords: ["van repair South Lanarkshire", "van mechanic Blantyre", "light commercial vehicle repair", "van MOT South Lanarkshire", "Transit repair near me"],
+    "Van repair in South Lanarkshire. All makes and models up to 3.5 tonnes. Servicing, brakes, clutches, engine work. Gallachers Car Garage, Blantyre. Call 01698 711111.",
+  keywords: ["van repair South Lanarkshire", "van mechanic Blantyre", "light commercial vehicle repair", "van servicing South Lanarkshire", "Transit repair near me"],
   alternates: { canonical: "/van-repair-south-lanarkshire" },
 };
 

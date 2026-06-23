@@ -14,7 +14,7 @@ export default function Page() {
       heroImage="/images/exhausts.jpg"
       intro="Loud exhaust or failed emissions? Full exhaust system repair and replacement including catalytic converters and DPF."
       paragraphs={[
-        "A damaged exhaust affects performance, fuel economy, and noise levels — and can fail your MOT. We offer complete exhaust system repairs and replacements for all vehicles.",
+        "A damaged exhaust affects performance, fuel economy, and noise levels — and can fail your inspection. We offer complete exhaust system repairs and replacements for all vehicles.",
         "From back boxes and silencers to catalytic converter replacements, DPF cleaning, and full system swaps, we've got you covered.",
         "If your exhaust is louder than usual, you can smell fumes, or your emissions light is on, bring it in for a thorough inspection.",
       ]}
@@ -30,7 +30,7 @@ export default function Page() {
       ]}
       faqs={[
         { question: "How do I know if my exhaust needs replacing?", answer: "Increased noise, visible rust or holes, rattling, reduced fuel economy, or a strong smell of fumes." },
-        { question: "Will a damaged exhaust fail an MOT?", answer: "Yes, excessive noise, leaks, and high emissions will all cause an MOT failure." },
+        { question: "Can a damaged exhaust cause problems?", answer: "Yes, excessive noise, leaks, and high emissions are all signs of exhaust issues that need fixing." },
       ]}
     />
   );

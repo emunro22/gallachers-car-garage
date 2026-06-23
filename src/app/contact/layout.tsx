@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Contact Us | Get a Quote for Car Repairs in Blantyre",
   description:
-    "Contact Gallachers Car Garage in Blantyre, South Lanarkshire. Call 01698 711111 for MOT testing, servicing, diagnostics and all car repairs. Unit 7a, 7b Forrest Street, Blantyre, G72 0JP.",
+    "Contact Gallachers Car Garage in Blantyre, South Lanarkshire. Call 01698 711111 for Servicing, diagnostics and all car repairs. Unit 7a, 7b Forrest Street, Blantyre, G72 0JP.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Gallachers Car Garage | Blantyre",

@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const seoPages = [
     "car-repair-near-me",
-    "mot-blantyre",
     "car-mechanic-south-lanarkshire",
     "brake-repair-blantyre",
     "car-servicing-blantyre",
@@ -37,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const servicePages = [
     "car-van-repairs",
-    "mot-testing",
     "servicing",
     "brakes",
     "diagnostics",

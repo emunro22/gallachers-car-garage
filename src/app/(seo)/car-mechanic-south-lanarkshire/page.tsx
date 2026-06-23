@@ -16,7 +16,7 @@ export default function CarMechanicSouthLanarkshire() {
         "Experienced, qualified mechanics",
         "All makes and models — cars and vans",
         "Modern diagnostic equipment",
-        "MOT-approved testing station",
+        "Full diagnostic capabilities",
         "Honest advice and fair pricing",
         "4.8-star Google rating from 40+ reviews",
         "Serving all of South Lanarkshire",

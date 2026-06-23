@@ -106,7 +106,7 @@ export default function ReviewsPage() {
             Join our happy customers
           </h2>
           <p className="text-white/50 mt-3 text-lg">
-            Book your repair or MOT today. Free quotes, no obligation.
+            Book your repair today. Free quotes, no obligation.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <a

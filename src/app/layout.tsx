@@ -15,14 +15,14 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${BUSINESS.domain}`),
   title: {
-    default: "Gallachers Car Garage | MOT, Servicing & Car Repairs in Blantyre, South Lanarkshire",
+    default: "Gallachers Car Garage | Servicing & Car Repairs in Blantyre, South Lanarkshire",
     template: "%s | Gallachers Car Garage, Blantyre",
   },
   description:
-    "Trusted car and van repair garage in Blantyre, South Lanarkshire. MOT testing, servicing, diagnostics, brakes, clutches, timing belts, suspension, exhausts and more. Call 01698 711111.",
+    "Trusted car and van repair garage in Blantyre, South Lanarkshire. Servicing, diagnostics, brakes, clutches, timing belts, suspension, exhausts and more. Call 01698 711111.",
   keywords: [
     "car repair Blantyre",
-    "MOT Blantyre",
+    "car diagnostics Blantyre",
     "car mechanic South Lanarkshire",
     "garage Blantyre",
     "car servicing near me",
@@ -44,15 +44,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     siteName: BUSINESS.name,
-    title: "Gallachers Car Garage | MOT, Servicing & Repairs in Blantyre",
+    title: "Gallachers Car Garage | Servicing & Repairs in Blantyre",
     description:
-      "Trusted auto repair centre in Blantyre. MOT testing, full servicing, diagnostics, brakes, clutches, timing belts and more. 4.8★ rated. Call 01698 711111.",
+      "Trusted auto repair centre in Blantyre. Full servicing, diagnostics, brakes, clutches, timing belts and more. 4.8★ rated. Call 01698 711111.",
     images: [{ url: "/logo.jpg", width: 1200, height: 630, alt: "Gallachers Car Garage" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gallachers Car Garage | Blantyre",
-    description: "MOT, servicing & car repairs in Blantyre, South Lanarkshire. Call 01698 711111.",
+    description: "Servicing & car repairs in Blantyre, South Lanarkshire. Call 01698 711111.",
   },
   robots: {
     index: true,

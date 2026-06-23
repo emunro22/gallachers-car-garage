@@ -28,8 +28,8 @@ export default function SuspensionRepairBlantyre() {
           answer: "Look for signs like knocking noises over bumps, a bouncy ride, the car dipping when braking, uneven tyre wear, or the vehicle pulling to one side. Any of these could indicate worn suspension components.",
         },
         {
-          question: "Will worn suspension fail an MOT?",
-          answer: "Yes, significantly worn shock absorbers, broken springs, or excessive play in suspension joints will cause an MOT failure. We can check your suspension before your MOT to avoid surprises.",
+          question: "Can worn suspension be dangerous?",
+          answer: "Yes, significantly worn shock absorbers, broken springs, or excessive play in suspension joints will cause an failure. We can check your suspension before your inspection to avoid surprises.",
         },
       ]}
     />

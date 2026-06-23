@@ -71,7 +71,7 @@ export default function Home() {
                 variants={fade}
                 className="mt-6 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl"
               >
-                Repairs, servicing &amp; MOT testing you can trust. Honest work
+                Repairs, servicing &amp; diagnostics you can trust. Honest work
                 at fair prices — for cars and light commercial vehicles up to 3.5t.
               </motion.p>
 
@@ -105,7 +105,7 @@ export default function Home() {
               className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4"
             >
               {[
-                { value: "MOT", label: "Approved Station" },
+                { value: "Expert", label: "Diagnostics" },
                 { value: "4.8★", label: "Customer Rating" },
                 { value: "All", label: "Makes & Models" },
                 { value: "3.5t", label: "Light Goods" },
@@ -139,7 +139,7 @@ export default function Home() {
               Our Services
             </motion.h2>
             <motion.p variants={fade} className="text-neutral-500 mt-3 max-w-2xl text-lg">
-              From MOTs and servicing to full engine rebuilds — quality repairs at
+              From servicing and diagnostics to full engine rebuilds — quality repairs at
               honest prices for cars and vans.
             </motion.p>
           </motion.div>
@@ -223,8 +223,8 @@ export default function Home() {
                     desc: "Cars, vans, and light commercial vehicles up to 3.5 tonnes. Every brand welcome.",
                   },
                   {
-                    title: "MOT Approved Station",
-                    desc: "Official MOT testing with honest assessments and competitive repair prices.",
+                    title: "Full Diagnostics",
+                    desc: "Advanced diagnostic equipment to quickly pinpoint faults on all makes and models.",
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4">
@@ -428,8 +428,8 @@ export default function Home() {
                   <p className="text-white/40 text-xs font-medium tracking-wider uppercase mb-2">Opening Hours</p>
                   <div className="space-y-1 text-sm text-white/70">
                     <p>{BUSINESS.hours.weekday}</p>
-                    <p>{BUSINESS.hours.saturday}</p>
-                    <p>{BUSINESS.hours.sunday}</p>
+                    <p>{BUSINESS.hours.friday}</p>
+                    <p>{BUSINESS.hours.weekend}</p>
                   </div>
                 </div>
               </div>

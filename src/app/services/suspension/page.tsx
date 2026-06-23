@@ -30,7 +30,7 @@ export default function Page() {
       ]}
       faqs={[
         { question: "How do I know if my suspension needs repair?", answer: "Knocking noises over bumps, a bouncy ride, dipping when braking, uneven tyre wear, or pulling to one side are all common signs." },
-        { question: "Will worn suspension fail an MOT?", answer: "Yes, significantly worn shocks, broken springs, or excessive play in suspension joints will cause a failure." },
+        { question: "Can worn suspension be dangerous?", answer: "Yes, significantly worn shocks, broken springs, or excessive play in suspension joints can be dangerous and should be repaired promptly." },
       ]}
     />
   );

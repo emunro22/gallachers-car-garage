@@ -6,7 +6,7 @@ export function LocalBusinessJsonLd() {
     "@type": "AutoRepair",
     name: BUSINESS.name,
     description:
-      "Trusted car and van repair garage in Blantyre, South Lanarkshire. MOT testing, servicing, diagnostics, brakes, clutches, timing belts, suspension, exhausts, engine work, tyres and batteries. Light goods up to 3.5t.",
+      "Trusted car and van repair garage in Blantyre, South Lanarkshire. Servicing, diagnostics, brakes, clutches, timing belts, suspension, exhausts, engine work, tyres and batteries. Light goods up to 3.5t.",
     url: `https://${BUSINESS.domain}`,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
@@ -26,15 +26,15 @@ export function LocalBusinessJsonLd() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "08:00",
-        closes: "17:30",
+        closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
+        dayOfWeek: "Friday",
         opens: "08:00",
-        closes: "12:30",
+        closes: "16:00",
       },
     ],
     aggregateRating: {
@@ -58,7 +58,7 @@ export function LocalBusinessJsonLd() {
       "@type": "OfferCatalog",
       name: "Auto Repair Services",
       itemListElement: [
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "MOT Testing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Car & Van Repairs" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Car Servicing" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Brake Repairs" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Diagnostics" } },

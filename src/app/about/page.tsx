@@ -57,7 +57,7 @@ export default function AboutPage() {
                 and affordable vehicle repairs.
               </motion.p>
               <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg leading-relaxed">
-                We&apos;re proud to be an MOT-approved testing station and
+                We&apos;re proud to be an Full diagnostic capabilities and
                 offer a comprehensive range of services for all makes and
                 models of cars and vans, including light commercial vehicles up
                 to 3.5 tonnes.

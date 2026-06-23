@@ -112,8 +112,8 @@ export default function ContactPage() {
                       <p className="text-white/40 text-xs font-medium tracking-wider uppercase">Opening Hours</p>
                       <div className="text-white/70 text-sm mt-1 space-y-0.5">
                         <p>{BUSINESS.hours.weekday}</p>
-                        <p>{BUSINESS.hours.saturday}</p>
-                        <p>{BUSINESS.hours.sunday}</p>
+                        <p>{BUSINESS.hours.friday}</p>
+                        <p>{BUSINESS.hours.weekend}</p>
                       </div>
                     </div>
                   </div>

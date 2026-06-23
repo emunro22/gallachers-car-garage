@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BUSINESS } from "@/lib/constants";
 
 const SERVICE_LINKS = [
-  { label: "MOT Testing", href: "/mot-blantyre" },
+  { label: "Diagnostics", href: "/diagnostics-blantyre" },
   { label: "Car Servicing", href: "/car-servicing-blantyre" },
   { label: "Brake Repairs", href: "/brake-repair-blantyre" },
   { label: "Diagnostics", href: "/diagnostics-blantyre" },
@@ -131,8 +131,8 @@ export default function Footer() {
                 </p>
                 <div className="text-white/50 space-y-1">
                   <p>{BUSINESS.hours.weekday}</p>
-                  <p>{BUSINESS.hours.saturday}</p>
-                  <p>{BUSINESS.hours.sunday}</p>
+                  <p>{BUSINESS.hours.friday}</p>
+                  <p>{BUSINESS.hours.weekend}</p>
                 </div>
               </div>
             </div>

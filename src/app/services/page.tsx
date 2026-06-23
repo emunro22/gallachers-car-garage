@@ -30,7 +30,7 @@ export default function ServicesPage() {
             </motion.h1>
             <motion.p variants={fade} className="text-white/50 text-lg mt-5 leading-relaxed">
               Full range of car and van repair services in Blantyre, South
-              Lanarkshire. From MOTs and servicing to complete engine rebuilds.
+              Lanarkshire. From Servicing to complete engine rebuilds.
               All makes and models, including light goods vehicles up to 3.5 tonnes.
             </motion.p>
           </motion.div>

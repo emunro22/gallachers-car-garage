@@ -15,7 +15,7 @@ export default function CarRepairNearMe() {
       bulletPoints={[
         "All makes and models of cars and vans repaired",
         "Light goods vehicles up to 3.5 tonnes",
-        "MOT testing station",
+        "diagnostic centre",
         "Full servicing — interim and major services",
         "Brakes, clutches, suspension, exhausts",
         "Timing belt and wet belt replacement",

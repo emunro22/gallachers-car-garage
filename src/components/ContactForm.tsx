@@ -100,7 +100,7 @@ export default function ContactForm() {
             className="w-full px-4 py-3 bg-neutral-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition text-neutral-900"
           >
             <option value="">Select a service</option>
-            <option value="MOT Testing">MOT Testing</option>
+            <option value="Diagnostics">Diagnostics</option>
             <option value="Servicing">Servicing</option>
             <option value="Brakes">Brakes</option>
             <option value="Diagnostics">Diagnostics</option>
