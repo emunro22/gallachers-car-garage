@@ -272,7 +272,7 @@ export default function Home() {
       </section>
 
       {/* ───────── REVIEWS ───────── */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-20 md:py-28 bg-neutral-100">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial="hidden"
@@ -285,12 +285,12 @@ export default function Home() {
                 <p className="text-primary font-semibold text-sm tracking-wide uppercase">
                   Reviews
                 </p>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-900 mt-2">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-800 mt-2">
                   What Our Customers Say
                 </h2>
               </div>
-              <div className="flex items-center gap-3 bg-neutral-50 rounded-xl px-5 py-3">
-                <div className="text-3xl font-extrabold text-neutral-900">{BUSINESS.rating}</div>
+              <div className="flex items-center gap-3 bg-white rounded-xl px-5 py-3">
+                <div className="text-3xl font-extrabold text-neutral-800">{BUSINESS.rating}</div>
                 <div>
                   <Stars />
                   <p className="text-neutral-500 text-xs mt-0.5">{BUSINESS.reviewCount} Google reviews</p>
@@ -310,18 +310,18 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={fade}
-                className="bg-neutral-50 rounded-2xl p-6 border border-gray-100"
+                className="bg-white rounded-2xl p-6 border border-neutral-200"
               >
                 <Stars />
-                <p className="text-neutral-800 text-sm leading-relaxed mt-3">
+                <p className="text-neutral-700 text-sm leading-relaxed mt-3">
                   &ldquo;{review.text}&rdquo;
                 </p>
-                <div className="mt-5 flex items-center gap-3 pt-4 border-t border-gray-100">
+                <div className="mt-5 flex items-center gap-3 pt-4 border-t border-neutral-200">
                   <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold">
                     {review.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-neutral-900 text-sm font-semibold">{review.name}</p>
+                    <p className="text-neutral-800 text-sm font-semibold">{review.name}</p>
                     <p className="text-neutral-500 text-xs">{review.date}</p>
                   </div>
                 </div>
@@ -444,8 +444,7 @@ export default function Home() {
       </section>
 
       {/* ───────── CTA ───────── */}
-      <section className="relative py-20 md:py-24 bg-neutral-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent" />
+      <section className="relative py-20 md:py-24 bg-white overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial="hidden"
@@ -456,10 +455,10 @@ export default function Home() {
             <motion.p variants={fade} className="text-primary font-semibold text-sm tracking-wide uppercase">
               Ready to Book?
             </motion.p>
-            <motion.h2 variants={fade} className="text-3xl md:text-5xl font-extrabold text-white mt-3">
+            <motion.h2 variants={fade} className="text-3xl md:text-5xl font-extrabold text-neutral-900 mt-3">
               Get in touch today
             </motion.h2>
-            <motion.p variants={fade} className="text-white/50 mt-4 text-lg max-w-xl mx-auto">
+            <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg max-w-xl mx-auto">
               Book online anytime or call us during opening hours. Free quotes,
               no obligation.
             </motion.p>
@@ -475,7 +474,7 @@ export default function Home() {
               </Link>
               <a
                 href={BUSINESS.phoneHref}
-                className="bg-white/10 hover:bg-white/15 border border-white/10 text-white font-semibold px-8 py-4 rounded-lg text-base transition-colors flex items-center justify-center gap-2"
+                className="bg-neutral-100 hover:bg-neutral-200 border border-neutral-200 text-neutral-700 font-semibold px-8 py-4 rounded-lg text-base transition-colors flex items-center justify-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

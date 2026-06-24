@@ -25,7 +25,7 @@ const QUICK_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-950 text-white">
+    <footer className="bg-white text-neutral-700 border-t border-neutral-200">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand */}
@@ -37,7 +37,7 @@ export default function Footer() {
               height={60}
               className="h-10 w-auto mb-4"
             />
-            <p className="text-white/40 text-sm leading-relaxed mb-5">
+            <p className="text-neutral-500 text-sm leading-relaxed mb-5">
               Blantyre&apos;s trusted auto repair centre. Honest, expert vehicle
               care for cars and light commercial vehicles.
             </p>
@@ -49,7 +49,7 @@ export default function Footer() {
                   </svg>
                 ))}
               </div>
-              <span className="text-white/40 text-xs">
+              <span className="text-neutral-400 text-xs">
                 {BUSINESS.rating}/5.0 &middot; {BUSINESS.reviewCount} reviews
               </span>
             </div>
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-xs font-semibold tracking-wider uppercase text-white/30 mb-4">
+            <h3 className="text-xs font-semibold tracking-wider uppercase text-neutral-400 mb-4">
               Our Services
             </h3>
             <ul className="space-y-2.5">
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/50 hover:text-white text-sm transition-colors"
+                    className="text-neutral-500 hover:text-neutral-900 text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -76,7 +76,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h3 className="text-xs font-semibold tracking-wider uppercase text-white/30 mb-4">
+            <h3 className="text-xs font-semibold tracking-wider uppercase text-neutral-400 mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2.5">
@@ -84,7 +84,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/50 hover:text-white text-sm transition-colors"
+                    className="text-neutral-500 hover:text-neutral-900 text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xs font-semibold tracking-wider uppercase text-white/30 mb-4">
+            <h3 className="text-xs font-semibold tracking-wider uppercase text-neutral-400 mb-4">
               Contact
             </h3>
             <div className="space-y-4 text-sm">
@@ -110,7 +110,7 @@ export default function Footer() {
               <div>
                 <a
                   href={`mailto:${BUSINESS.email}`}
-                  className="text-white/50 hover:text-white transition-colors"
+                  className="text-neutral-500 hover:text-neutral-900 transition-colors"
                 >
                   {BUSINESS.email}
                 </a>
@@ -120,16 +120,16 @@ export default function Footer() {
                   href={BUSINESS.googleMapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/50 hover:text-white transition-colors leading-relaxed"
+                  className="text-neutral-500 hover:text-neutral-900 transition-colors leading-relaxed"
                 >
                   {BUSINESS.address.full}
                 </a>
               </div>
-              <div className="pt-2 border-t border-white/5">
-                <p className="text-white/30 text-xs font-medium tracking-wider uppercase mb-2">
+              <div className="pt-2 border-t border-neutral-200">
+                <p className="text-neutral-400 text-xs font-medium tracking-wider uppercase mb-2">
                   Opening Hours
                 </p>
-                <div className="text-white/50 space-y-1">
+                <div className="text-neutral-500 space-y-1">
                   <p>{BUSINESS.hours.weekday}</p>
                   <p>{BUSINESS.hours.friday}</p>
                   <p>{BUSINESS.hours.weekend}</p>
@@ -140,11 +140,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-white/25 text-xs">
+        <div className="mt-12 pt-6 border-t border-neutral-200 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-neutral-400 text-xs">
             &copy; {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.
           </p>
-          <p className="text-white/25 text-xs">
+          <p className="text-neutral-400 text-xs">
             Auto Repair Centre &middot; Blantyre, South Lanarkshire
           </p>
         </div>
