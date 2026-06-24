@@ -72,7 +72,7 @@ export default function Home() {
                 className="mt-6 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl"
               >
                 Repairs, servicing &amp; diagnostics you can trust. Honest work
-                at fair prices — for cars and light commercial vehicles up to 3.5t.
+                at fair prices, for cars and light commercial vehicles up to 3.5t.
               </motion.p>
 
               <motion.div
@@ -139,7 +139,7 @@ export default function Home() {
               Our Services
             </motion.h2>
             <motion.p variants={fade} className="text-neutral-500 mt-3 max-w-2xl text-lg">
-              From servicing and diagnostics to full engine rebuilds — quality repairs at
+              From servicing and diagnostics to full engine rebuilds, quality repairs at
               honest prices for cars and vans.
             </motion.p>
           </motion.div>
@@ -249,7 +249,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-neutral-800">
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-white">
                 <Image
                   src="/logo.jpg"
                   alt="Gallachers Car Garage"
@@ -259,12 +259,13 @@ export default function Home() {
                 />
               </div>
               {/* Floating review badge */}
-              <div className="absolute -bottom-6 -left-4 md:left-auto md:-right-6 bg-white rounded-xl shadow-xl shadow-black/15 p-5 max-w-[260px]">
+              <div className="absolute -bottom-6 -left-4 md:left-auto md:-right-6 bg-neutral-800 rounded-xl shadow-xl shadow-black/15 p-5 max-w-[260px]">
+                <p className="text-white font-bold text-sm mb-2">Gallachers Car Garage</p>
                 <Stars />
-                <p className="text-neutral-900 text-sm font-medium mt-2">
+                <p className="text-neutral-300 text-sm font-medium mt-2">
                   &ldquo;Best garage around. Lovely friendly people and great prices.&rdquo;
                 </p>
-                <p className="text-neutral-500 text-xs mt-1.5">— Emma, Google Review</p>
+                <p className="text-neutral-400 text-xs mt-1.5">, Emma, Google Review</p>
               </div>
             </motion.div>
           </div>
