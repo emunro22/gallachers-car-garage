@@ -155,6 +155,18 @@ export default function AboutPage() {
               Blantyre, Hamilton, Bothwell, Uddingston, Cambuslang, East
               Kilbride, Rutherglen, and the surrounding areas.
             </motion.p>
+            <motion.div variants={fade} className="rounded-2xl overflow-hidden h-[400px] mt-8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.5!2d-4.0917!3d55.7917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888461c8b5a3a3b%3A0x7c1234567890!2sForrest+St%2C+Blantyre%2C+Glasgow+G72+0JP!5e0!3m2!1sen!2suk!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Gallachers Car Garage Location"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </section>
