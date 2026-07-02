@@ -37,7 +37,7 @@ export default function AboutPage() {
       </section>
 
       {/* About content */}
-      <section className="py-20 md:py-28 bg-neutral-950">
+      <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -46,17 +46,17 @@ export default function AboutPage() {
               viewport={{ once: true }}
               variants={stagger}
             >
-              <motion.h2 variants={fade} className="text-3xl font-extrabold text-white">
+              <motion.h2 variants={fade} className="text-3xl font-extrabold text-neutral-900">
                 Who We Are
               </motion.h2>
-              <motion.p variants={fade} className="text-white/50 mt-4 text-lg leading-relaxed">
+              <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg leading-relaxed">
                 Gallachers Car Garage is a family-run auto repair centre based
                 in Blantyre, South Lanarkshire. Led by Darren Gallacher, our
                 team of experienced mechanics has been serving the local
                 community for years, building a reputation for honest, reliable
                 and affordable vehicle repairs.
               </motion.p>
-              <motion.p variants={fade} className="text-white/50 mt-4 text-lg leading-relaxed">
+              <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg leading-relaxed">
                 We&apos;re proud to be an Full diagnostic capabilities and
                 offer a comprehensive range of services for all makes and
                 models of cars and vans, including light commercial vehicles up
@@ -84,7 +84,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 md:py-28 bg-neutral-950">
+      <section className="py-20 md:py-28 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial="hidden"
@@ -92,7 +92,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             variants={stagger}
           >
-            <motion.h2 variants={fade} className="text-3xl font-extrabold text-white">
+            <motion.h2 variants={fade} className="text-3xl font-extrabold text-neutral-900">
               What Sets Us Apart
             </motion.h2>
             <motion.div variants={fade} className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -132,7 +132,7 @@ export default function AboutPage() {
       </section>
 
       {/* Location emphasis */}
-      <section className="py-20 md:py-28 bg-neutral-950">
+      <section className="py-20 md:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <motion.div
             initial="hidden"
@@ -140,17 +140,17 @@ export default function AboutPage() {
             viewport={{ once: true }}
             variants={stagger}
           >
-            <motion.h2 variants={fade} className="text-3xl font-extrabold text-white">
+            <motion.h2 variants={fade} className="text-3xl font-extrabold text-neutral-900">
               Where to Find Us
             </motion.h2>
-            <motion.p variants={fade} className="text-white/50 mt-4 text-lg leading-relaxed">
+            <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg leading-relaxed">
               We&apos;re located at {BUSINESS.address.full}, just off the
               main road in Blantyre. While we&apos;re a little tucked away,
               we&apos;re easy to find once you know where to look — just
               search &ldquo;Gallachers Car Garage&rdquo; on Google Maps. Look
               for our blue building with the green Gallachers sign.
             </motion.p>
-            <motion.p variants={fade} className="text-white/50 mt-4 text-lg leading-relaxed">
+            <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg leading-relaxed">
               We serve customers from across South Lanarkshire including
               Blantyre, Hamilton, Bothwell, Uddingston, Cambuslang, East
               Kilbride, Rutherglen, and the surrounding areas.
