@@ -22,6 +22,11 @@ export default function ClutchRepairBlantyre() {
         "Quality parts used",
         "Competitive pricing",
       ]}
+      relatedLink={{
+        text: "Not sure if it's your clutch?",
+        label: "Read our guide: Signs Your Clutch Is Failing →",
+        href: "/guides/signs-your-clutch-is-failing",
+      }}
       faqs={[
         {
           question: "How do I know if my clutch needs replacing?",

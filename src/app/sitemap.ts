@@ -34,6 +34,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const locationPages = [
+    "brake-repair-hamilton",
+    "car-servicing-hamilton",
+    "brake-repair-bothwell",
+    "car-servicing-bothwell",
+    "brake-repair-uddingston",
+    "car-servicing-uddingston",
+    "brake-repair-cambuslang",
+    "car-servicing-cambuslang",
+    "brake-repair-east-kilbride",
+    "car-servicing-east-kilbride",
+  ].map((slug) => ({
+    url: `${BASE_URL}/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  const guidePages = [
+    { url: `${BASE_URL}/guides`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/guides/when-to-replace-a-timing-belt`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.65 },
+    { url: `${BASE_URL}/guides/signs-your-clutch-is-failing`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.65 },
+  ];
+
   const servicePages = [
     "car-van-repairs",
     "servicing",
@@ -52,5 +76,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...mainPages, ...servicePages, ...seoPages];
+  return [...mainPages, ...servicePages, ...seoPages, ...locationPages, ...guidePages];
 }

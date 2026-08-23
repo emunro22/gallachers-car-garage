@@ -6,7 +6,6 @@ const SERVICE_LINKS = [
   { label: "Diagnostics", href: "/diagnostics-blantyre" },
   { label: "Car Servicing", href: "/car-servicing-blantyre" },
   { label: "Brake Repairs", href: "/brake-repair-blantyre" },
-  { label: "Diagnostics", href: "/diagnostics-blantyre" },
   { label: "Clutch Repairs", href: "/clutch-repair-blantyre" },
   { label: "Timing Belts", href: "/timing-belt-replacement-blantyre" },
   { label: "Suspension", href: "/suspension-repair-blantyre" },
@@ -19,15 +18,24 @@ const QUICK_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Reviews", href: "/reviews" },
   { label: "Contact", href: "/contact" },
+  { label: "Service Guides", href: "/guides" },
   { label: "Car Repair Near Me", href: "/car-repair-near-me" },
   { label: "Garage Near Me", href: "/garage-near-me-blantyre" },
+];
+
+const AREA_LINKS = [
+  { label: "Hamilton", href: "/car-servicing-hamilton" },
+  { label: "Bothwell", href: "/car-servicing-bothwell" },
+  { label: "Uddingston", href: "/car-servicing-uddingston" },
+  { label: "Cambuslang", href: "/car-servicing-cambuslang" },
+  { label: "East Kilbride", href: "/car-servicing-east-kilbride" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-white text-neutral-700 border-t border-neutral-200">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
@@ -62,6 +70,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5">
               {SERVICE_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-neutral-500 hover:text-neutral-900 text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Areas Covered */}
+          <div>
+            <h3 className="text-xs font-semibold tracking-wider uppercase text-neutral-400 mb-4">
+              Areas We Cover
+            </h3>
+            <ul className="space-y-2.5">
+              {AREA_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

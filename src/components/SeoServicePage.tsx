@@ -20,7 +20,9 @@ interface SeoServicePageProps {
   intro: string;
   paragraphs: string[];
   bulletPoints?: string[];
+  bulletHeading?: string;
   faqs?: { question: string; answer: string }[];
+  relatedLink?: { text: string; href: string; label: string };
 }
 
 export default function SeoServicePage({
@@ -30,7 +32,9 @@ export default function SeoServicePage({
   intro,
   paragraphs,
   bulletPoints,
+  bulletHeading = "What We Offer",
   faqs,
+  relatedLink,
 }: SeoServicePageProps) {
   return (
     <>
@@ -93,6 +97,29 @@ export default function SeoServicePage({
             ))}
           </motion.div>
 
+          {relatedLink && (
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fade}
+              className="mt-8"
+            >
+              <Link
+                href={relatedLink.href}
+                className="flex items-center justify-between gap-4 bg-primary/5 hover:bg-primary/10 border border-primary/15 rounded-xl px-5 py-4 transition-colors group"
+              >
+                <span className="text-neutral-800 text-sm">
+                  {relatedLink.text}{" "}
+                  <span className="text-primary font-semibold">{relatedLink.label}</span>
+                </span>
+                <svg className="w-4 h-4 text-primary shrink-0 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </motion.div>
+          )}
+
           {bulletPoints && bulletPoints.length > 0 && (
             <motion.div
               initial="hidden"
@@ -102,7 +129,7 @@ export default function SeoServicePage({
               className="mt-12"
             >
               <motion.h2 variants={fade} className="text-2xl font-extrabold text-neutral-900 mb-6">
-                What We Offer
+                {bulletHeading}
               </motion.h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {bulletPoints.map((point, i) => (

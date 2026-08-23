@@ -16,7 +16,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${BUSINESS.domain}`),
   title: {
-    default: "Gallachers Car Garage | Servicing & Car Repairs in Blantyre, South Lanarkshire",
+    default: "Gallachers Car Garage | Blantyre Car Repairs",
     template: "%s | Gallachers Car Garage, Blantyre",
   },
   description:

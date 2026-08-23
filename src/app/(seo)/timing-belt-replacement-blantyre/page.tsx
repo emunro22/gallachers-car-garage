@@ -22,6 +22,11 @@ export default function TimingBeltReplacementBlantyre() {
         "Quality OEM-spec parts",
         "Competitive pricing",
       ]}
+      relatedLink={{
+        text: "Not sure if yours is due?",
+        label: "Read our guide: When to Replace a Timing Belt →",
+        href: "/guides/when-to-replace-a-timing-belt",
+      }}
       faqs={[
         {
           question: "How often should a timing belt be replaced?",
