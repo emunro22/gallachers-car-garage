@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Brake Repairs"
-      heroImage="/images/brakes.jpg"
+      heroImage="/images/brakes.webp"
       intro="Your brakes are your most important safety feature. Expert brake repair and replacement using quality parts at competitive prices."
       paragraphs={[
         "At Gallachers Car Garage, we provide comprehensive brake repair services including pads, discs, calipers, and brake fluid changes for all makes and models of cars and vans.",

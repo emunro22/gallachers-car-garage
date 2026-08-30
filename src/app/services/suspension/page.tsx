@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Suspension Work"
-      heroImage="/images/suspension.jpg"
+      heroImage="/images/suspension.webp"
       intro="Bumpy ride or knocking noises? Full suspension repairs including shock absorbers, springs, drop links, and wishbones."
       paragraphs={[
         "Worn suspension affects your vehicle's handling, comfort, and safety. We carry out full suspension repairs on all makes and models — from shock absorbers and coil springs to drop links, anti-roll bars, and wishbones.",

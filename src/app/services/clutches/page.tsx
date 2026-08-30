@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Clutch Repairs"
-      heroImage="/images/clutches.jpg"
+      heroImage="/images/clutches.webp"
       intro="Clutch slipping or biting high? Complete clutch replacement and repair including dual mass flywheels at competitive prices."
       paragraphs={[
         "A worn clutch makes driving difficult and dangerous. We carry out complete clutch replacement and repair on all makes and models of cars and vans.",

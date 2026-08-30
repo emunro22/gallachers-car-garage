@@ -4,6 +4,41 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { BUSINESS, SERVICES, REVIEWS } from "@/lib/constants";
+import { FaqJsonLd } from "@/components/JsonLd";
+import ContactForm from "@/components/ContactForm";
+
+const FAQS = [
+  {
+    question: "What areas do you cover?",
+    answer:
+      "We're based in Blantyre and serve customers across South Lanarkshire, including Hamilton, Bothwell, Uddingston, Cambuslang and East Kilbride.",
+  },
+  {
+    question: "Do you work on vans as well as cars?",
+    answer:
+      "Yes. Alongside cars, we service and repair light commercial vehicles and vans up to 3.5 tonnes.",
+  },
+  {
+    question: "Will I get a quote before any work is carried out?",
+    answer:
+      "Always. We give you a full quote before starting chargeable work, and we'll never carry out extra work without checking with you first.",
+  },
+  {
+    question: "What are your opening hours?",
+    answer:
+      "We're open Monday to Thursday 8:00am–5:00pm and Friday 8:00am–4:00pm. We're closed on Saturday and Sunday.",
+  },
+  {
+    question: "Do you work on all makes and models?",
+    answer:
+      "Yes, our mechanics are experienced across all makes and models, from routine servicing to complex diagnostics and engine work.",
+  },
+  {
+    question: "How do I book a service or repair?",
+    answer:
+      "Call us on 01698 711111, or send an enquiry through our contact form, and we'll get back to you to arrange a time.",
+  },
+];
 
 const fade = {
   hidden: { opacity: 0, y: 20 },
@@ -29,12 +64,13 @@ function Stars({ count = 5 }: { count?: number }) {
 export default function Home() {
   return (
     <>
+      <FaqJsonLd items={FAQS} />
       {/* ───────── HERO ───────── */}
       <section className="relative min-h-[90vh] flex items-center bg-neutral-950 overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero-garage.jpg"
+            src="/images/hero-garage.webp"
             alt="Car repair workshop"
             fill
             className="object-cover"
@@ -251,7 +287,7 @@ export default function Home() {
             >
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-white">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.webp"
                   alt="Gallachers Car Garage"
                   fill
                   className="object-contain p-8"
@@ -444,14 +480,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ───────── FAQ ───────── */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={stagger}
+            className="text-center mb-12"
+          >
+            <motion.p variants={fade} className="text-primary font-semibold text-sm tracking-wide uppercase">
+              FAQs
+            </motion.p>
+            <motion.h2 variants={fade} className="text-3xl md:text-4xl font-extrabold text-neutral-900 mt-2">
+              Frequently Asked Questions
+            </motion.h2>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-40px" }}
+            variants={stagger}
+            className="space-y-4"
+          >
+            {FAQS.map((faq) => (
+              <motion.div
+                key={faq.question}
+                variants={fade}
+                className="rounded-2xl border border-gray-100 bg-neutral-50 p-6"
+              >
+                <h3 className="font-bold text-neutral-900">{faq.question}</h3>
+                <p className="text-neutral-500 text-sm mt-2 leading-relaxed">{faq.answer}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* ───────── CTA ───────── */}
-      <section className="relative py-20 md:py-24 bg-white overflow-hidden">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
+      <section className="relative py-20 md:py-24 bg-neutral-50 overflow-hidden">
+        <div className="relative max-w-4xl mx-auto px-6">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
+            className="text-center"
           >
             <motion.p variants={fade} className="text-primary font-semibold text-sm tracking-wide uppercase">
               Ready to Book?
@@ -460,22 +536,16 @@ export default function Home() {
               Get in touch today
             </motion.h2>
             <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg max-w-xl mx-auto">
-              Book online anytime or call us during opening hours. Free quotes,
-              no obligation.
+              Send a quick enquiry below, or call us during opening hours. Free
+              quotes, no obligation.
             </motion.p>
             <motion.div
               variants={fade}
-              className="mt-8 flex flex-col sm:flex-row gap-3 justify-center"
+              className="mt-6 flex justify-center"
             >
-              <Link
-                href="/contact"
-                className="bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg text-base transition-colors"
-              >
-                Send an Enquiry
-              </Link>
               <a
                 href={BUSINESS.phoneHref}
-                className="bg-neutral-100 hover:bg-neutral-200 border border-neutral-200 text-neutral-700 font-semibold px-8 py-4 rounded-lg text-base transition-colors flex items-center justify-center gap-2"
+                className="bg-white hover:bg-neutral-100 border border-neutral-200 text-neutral-700 font-semibold px-8 py-4 rounded-lg text-base transition-colors inline-flex items-center justify-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -483,6 +553,16 @@ export default function Home() {
                 Call {BUSINESS.phone}
               </a>
             </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-12 bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 max-w-2xl mx-auto"
+          >
+            <ContactForm />
           </motion.div>
         </div>
       </section>

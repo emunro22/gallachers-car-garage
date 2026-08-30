@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Diagnostics"
-      heroImage="/images/diagnostics.jpg"
+      heroImage="/images/diagnostics.webp"
       intro="Engine warning light on? Our advanced diagnostic equipment quickly pinpoints faults so we can fix them properly first time."
       paragraphs={[
         "Modern vehicles rely on complex electronic systems, and when something goes wrong, a warning light is often the first sign. We use advanced diagnostic equipment to read fault codes and identify exactly what's causing the issue.",

@@ -3,6 +3,8 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import { BUSINESS } from "@/lib/constants";
 import { Analytics } from "@vercel/analytics/next";
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Gallachers Car Garage, Blantyre",
   },
   description:
-    "Trusted car and van repair garage in Blantyre, South Lanarkshire. Servicing, diagnostics, brakes, clutches, timing belts, suspension, exhausts and more. Call 01698 711111.",
+    "Gallachers Car Garage offers trusted car and van repairs in Blantyre, South Lanarkshire. Servicing, diagnostics, brakes, clutches, timing belts, suspension, exhausts and more. Call 01698 711111.",
   keywords: [
     "car repair Blantyre",
     "car diagnostics Blantyre",
@@ -77,7 +79,9 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsent />
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );

@@ -114,6 +114,28 @@ export function ServiceJsonLd({ name, description }: { name: string; description
   );
 }
 
+export function FaqJsonLd({ items }: { items: { question: string; answer: string }[] }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function BreadcrumbJsonLd({ items }: { items: { name: string; href: string }[] }) {
   const schema = {
     "@context": "https://schema.org",

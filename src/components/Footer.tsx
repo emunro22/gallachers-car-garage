@@ -39,7 +39,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/logo.jpg"
+              src="/logo.webp"
               alt="Gallachers Car Garage"
               width={180}
               height={60}
@@ -171,9 +171,23 @@ export default function Footer() {
           <p className="text-neutral-400 text-xs">
             &copy; {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.
           </p>
-          <p className="text-neutral-400 text-xs">
-            Auto Repair Centre &middot; Blantyre, South Lanarkshire
-          </p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/privacy-policy"
+              className="text-neutral-400 hover:text-neutral-700 text-xs transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-neutral-400 hover:text-neutral-700 text-xs transition-colors"
+            >
+              Terms &amp; Conditions
+            </Link>
+            <span className="text-neutral-400 text-xs">
+              Auto Repair Centre &middot; Blantyre, South Lanarkshire
+            </span>
+          </div>
         </div>
       </div>
     </footer>

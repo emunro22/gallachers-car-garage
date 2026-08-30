@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Car & Van Repairs"
-      heroImage="/images/car-van-repairs.jpg"
+      heroImage="/images/car-van-repairs.webp"
       intro="Complete car and van repair services for all makes and models, including light goods vehicles up to 3.5 tonnes. Honest prices, expert mechanics."
       paragraphs={[
         "At Gallachers Car Garage, we handle all types of mechanical repairs for cars, vans, and light commercial vehicles. Whether it's a simple fix or a major job, our experienced team will get you back on the road quickly and affordably.",

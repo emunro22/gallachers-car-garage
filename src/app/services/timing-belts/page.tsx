@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Timing Belts & Wet Belts"
-      heroImage="/images/timing-belts.jpg"
+      heroImage="/images/timing-belts.webp"
       intro="Don't risk catastrophic engine damage. Timing belt and wet belt replacement to manufacturer schedules at competitive prices."
       paragraphs={[
         "A snapped timing belt can destroy your engine — costing thousands to repair. We carry out timing belt and wet belt replacement to manufacturer schedules, protecting your engine and saving you money long-term.",

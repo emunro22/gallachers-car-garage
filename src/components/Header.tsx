@@ -62,7 +62,7 @@ export default function Header() {
         <nav className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
-              src="/logo.jpg"
+              src="/logo.webp"
               alt="Gallachers Car Garage"
               width={240}
               height={80}

@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Full Servicing"
-      heroImage="/images/servicing.jpg"
+      heroImage="/images/servicing.webp"
       intro="Keep your car running smoothly with comprehensive servicing. Interim and full services for all makes and models at honest prices."
       paragraphs={[
         "Regular servicing keeps your vehicle reliable, safe, and fuel-efficient. We offer both interim and full major services for all makes and models at prices that won't break the bank.",

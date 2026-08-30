@@ -72,7 +72,7 @@ export default function AboutPage() {
               className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-white"
             >
               <Image
-                src="/logo.jpg"
+                src="/logo.webp"
                 alt="Gallachers Car Garage"
                 fill
                 className="object-contain p-8"

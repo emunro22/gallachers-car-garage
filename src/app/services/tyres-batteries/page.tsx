@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Tyres & Batteries"
-      heroImage="/images/tyres-batteries.jpg"
+      heroImage="/images/tyres-batteries.webp"
       intro="Quality tyres at competitive prices and battery testing and replacement. Budget, mid-range, and premium options available."
       paragraphs={[
         "Whether you need new tyres or a battery replacement, we offer quality products at competitive prices. We supply and fit tyres for all makes and models of cars and vans.",

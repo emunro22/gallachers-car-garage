@@ -32,70 +32,70 @@ export const SERVICES = [
     slug: "car-van-repairs",
     description:
       "Complete car and van repair services for all makes and models, including light goods vehicles up to 3.5 tonnes.",
-    image: "/images/car-van-repairs.jpg",
+    image: "/images/car-van-repairs.webp",
   },
   {
     title: "Full Servicing",
     slug: "servicing",
     description:
       "Comprehensive vehicle servicing including interim and full services to keep your car running smoothly.",
-    image: "/images/servicing.jpg",
+    image: "/images/servicing.webp",
   },
   {
     title: "Brake Repairs",
     slug: "brakes",
     description:
       "Expert brake pad, disc, and caliper replacement. Keeping you safe on the road with quality brake repairs.",
-    image: "/images/brakes.jpg",
+    image: "/images/brakes.webp",
   },
   {
     title: "Diagnostics",
     slug: "diagnostics",
     description:
       "Advanced diagnostic equipment to quickly identify engine faults, warning lights, and electrical issues.",
-    image: "/images/diagnostics.jpg",
+    image: "/images/diagnostics.webp",
   },
   {
     title: "Suspension Work",
     slug: "suspension",
     description:
       "Full suspension repairs including shock absorbers, springs, drop links, and anti-roll bars.",
-    image: "/images/suspension.jpg",
+    image: "/images/suspension.webp",
   },
   {
     title: "Clutch Repairs",
     slug: "clutches",
     description:
       "Complete clutch replacement and repair service. Dual mass flywheel replacement also available.",
-    image: "/images/clutches.jpg",
+    image: "/images/clutches.webp",
   },
   {
     title: "Timing Belts & Wet Belts",
     slug: "timing-belts",
     description:
       "Timing belt and wet belt replacement to prevent costly engine damage. Don't risk it — get it replaced on schedule.",
-    image: "/images/timing-belts.jpg",
+    image: "/images/timing-belts.webp",
   },
   {
     title: "Engine Work",
     slug: "engine-work",
     description:
       "All engine work undertaken including head gasket repair, turbo replacement, and engine rebuilds.",
-    image: "/images/engine-work.jpg",
+    image: "/images/engine-work.webp",
   },
   {
     title: "Exhausts",
     slug: "exhausts",
     description:
       "Full exhaust system repairs and replacements including catalytic converters and DPF cleaning.",
-    image: "/images/exhausts.jpg",
+    image: "/images/exhausts.webp",
   },
   {
     title: "Tyres & Batteries",
     slug: "tyres-batteries",
     description:
       "Quality tyres at competitive prices plus battery testing and replacement for all vehicles.",
-    image: "/images/tyres-batteries.jpg",
+    image: "/images/tyres-batteries.webp",
   },
 ];
 

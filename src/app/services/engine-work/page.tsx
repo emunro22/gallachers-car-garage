@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <ServiceDetailPage
       title="Engine Work"
-      heroImage="/images/engine-work.jpg"
+      heroImage="/images/engine-work.webp"
       intro="All engine work undertaken — from head gaskets and turbo replacement to complete engine rebuilds. Petrol and diesel."
       paragraphs={[
         "Engine problems can be daunting, but we have the expertise and equipment to tackle any engine repair. Our experienced mechanics handle everything from minor work to complete rebuilds.",
