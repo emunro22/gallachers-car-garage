@@ -43,12 +43,12 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-xl font-bold text-neutral-900 mb-3">What we collect</h2>
             <ul className="list-disc pl-5 space-y-2 leading-relaxed">
               <li>
-                <strong>Enquiry form details</strong> — name, email address, phone number and
+                <strong>Enquiry form details</strong>: name, email address, phone number and
                 any message you send us via our contact form, so we can respond to your enquiry
                 or quote request.
               </li>
               <li>
-                <strong>Analytics data</strong> — anonymised or pseudonymised information about
+                <strong>Analytics data</strong>: anonymised or pseudonymised information about
                 how visitors use this site (e.g. pages viewed, general location, device type),
                 collected via privacy-friendly analytics and, where you consent, Google
                 Analytics.

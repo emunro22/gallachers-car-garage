@@ -15,7 +15,7 @@ export default function Page() {
       intro="Engine warning light on? Our advanced diagnostic equipment quickly pinpoints faults so we can fix them properly first time."
       paragraphs={[
         "Modern vehicles rely on complex electronic systems, and when something goes wrong, a warning light is often the first sign. We use advanced diagnostic equipment to read fault codes and identify exactly what's causing the issue.",
-        "Our experienced mechanics don't just read the code — they interpret it, find the root cause, and fix it properly. From engine management faults and ABS issues to airbag warnings and transmission problems.",
+        "Our experienced mechanics don't just read the code: they interpret it, find the root cause, and fix it properly. From engine management faults and ABS issues to airbag warnings and transmission problems.",
         "Don't ignore warning lights. What might seem minor could lead to expensive damage if left unresolved.",
       ]}
       bulletPoints={[

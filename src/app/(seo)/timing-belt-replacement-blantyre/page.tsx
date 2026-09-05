@@ -10,7 +10,7 @@ export default function TimingBeltReplacementBlantyre() {
       paragraphs={[
         "A snapped timing belt can cause catastrophic engine damage costing thousands to repair. At Gallachers Car Garage in Blantyre, we carry out timing belt and wet belt replacement to manufacturer schedules, protecting your engine and saving you money in the long run.",
         "Wet belt systems, found in many modern vehicles like the Ford EcoBoost, are particularly critical to replace on time. These belts run in engine oil and deteriorate faster than traditional timing belts. Our mechanics are experienced with wet belt replacements across all affected models.",
-        "We recommend replacing your timing belt at the intervals specified by your vehicle manufacturer — typically every 40,000 to 100,000 miles or every 4-5 years, whichever comes first. If you're not sure when yours was last changed, give us a call and we'll check for you.",
+        "We recommend replacing your timing belt at the intervals specified by your vehicle manufacturer, typically every 40,000 to 100,000 miles or every 4-5 years, whichever comes first. If you're not sure when yours was last changed, give us a call and we'll check for you.",
       ]}
       bulletPoints={[
         "Timing belt replacement",

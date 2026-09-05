@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllBlogSlugs } from "@/lib/blogPosts";
 
 const BASE_URL = "https://gallacherscargarage.co.uk";
 
@@ -78,5 +79,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...mainPages, ...servicePages, ...seoPages, ...locationPages, ...guidePages];
+  const blogPages = [
+    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.7 },
+    ...getAllBlogSlugs().map((slug) => ({
+      url: `${BASE_URL}/blog/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+  ];
+
+  return [...mainPages, ...servicePages, ...seoPages, ...locationPages, ...guidePages, ...blogPages];
 }

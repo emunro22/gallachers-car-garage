@@ -18,7 +18,7 @@ export default function ClutchRepairBlantyre() {
         "Clutch cable adjustment and replacement",
         "Slave and master cylinder repair",
         "Clutch fluid change",
-        "All makes and models — cars and vans",
+        "All makes and models, cars and vans",
         "Quality parts used",
         "Competitive pricing",
       ]}

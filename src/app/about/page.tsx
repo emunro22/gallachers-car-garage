@@ -146,7 +146,7 @@ export default function AboutPage() {
             <motion.p variants={fade} className="text-neutral-500 mt-4 text-lg leading-relaxed">
               We&apos;re located at {BUSINESS.address.full}, just off the
               main road in Blantyre. While we&apos;re a little tucked away,
-              we&apos;re easy to find once you know where to look — just
+              we&apos;re easy to find once you know where to look. Just
               search &ldquo;Gallachers Car Garage&rdquo; on Google Maps. Look
               for our blue building with the green Gallachers sign.
             </motion.p>

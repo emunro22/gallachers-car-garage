@@ -9,7 +9,7 @@ export default function BrakeRepairBlantyre() {
       intro="Expert brake repair and replacement in Blantyre. Gallachers Car Garage keeps you safe on the road with quality brake parts at competitive prices."
       paragraphs={[
         "Your brakes are your vehicle's most important safety feature. At Gallachers Car Garage in Blantyre, we provide comprehensive brake repair services including brake pads, discs, calipers, and brake fluid changes for all makes and models.",
-        "If you're hearing squealing, grinding, or noticing your car pulling to one side when braking, don't delay — bring it to us for a thorough brake inspection. We'll diagnose the issue and give you an honest quote before carrying out any work.",
+        "If you're hearing squealing, grinding, or noticing your car pulling to one side when braking, don't delay. Bring it to us for a thorough brake inspection. We'll diagnose the issue and give you an honest quote before carrying out any work.",
         "We use quality brake components and our experienced mechanics ensure every brake job is done to the highest standard. Your safety is our priority, and we never cut corners on brake work.",
       ]}
       bulletPoints={[
@@ -20,7 +20,7 @@ export default function BrakeRepairBlantyre() {
         "Brake line inspection and repair",
         "Handbrake adjustment and repair",
         "Free brake inspection with every service",
-        "All makes and models — cars and vans",
+        "All makes and models, cars and vans",
       ]}
       faqs={[
         {

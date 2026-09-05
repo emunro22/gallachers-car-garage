@@ -154,7 +154,7 @@ export default function SeoServicePage({
               Find Us in Blantyre
             </motion.h2>
             <motion.p variants={fade} className="text-neutral-500 mb-6">
-              {BUSINESS.address.full} — serving Blantyre, Hamilton, Bothwell,
+              {BUSINESS.address.full}, serving Blantyre, Hamilton, Bothwell,
               Uddingston, Cambuslang, East Kilbride, and all of South Lanarkshire.
             </motion.p>
             <motion.div variants={fade} className="rounded-2xl overflow-hidden h-[300px]">
@@ -210,7 +210,7 @@ export default function SeoServicePage({
           <blockquote className="text-neutral-800 text-lg italic max-w-xl mx-auto">
             &ldquo;{REVIEWS[0].text}&rdquo;
           </blockquote>
-          <p className="text-neutral-500 text-sm mt-3">— {REVIEWS[0].name}, Google Review</p>
+          <p className="text-neutral-500 text-sm mt-3">Reviewed by {REVIEWS[0].name}, Google Review</p>
         </div>
       </section>
 

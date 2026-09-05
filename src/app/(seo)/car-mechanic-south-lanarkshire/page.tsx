@@ -10,11 +10,11 @@ export default function CarMechanicSouthLanarkshire() {
       paragraphs={[
         "Finding a trustworthy car mechanic in South Lanarkshire doesn't have to be difficult. At Gallachers Car Garage in Blantyre, our team of experienced mechanics has built a strong reputation for honest, quality work at fair prices.",
         "We work on all makes and models of cars and vans, from simple services and brake jobs to complex engine rebuilds and timing belt replacements. Our workshop is equipped with modern diagnostic tools to quickly pinpoint faults and get your vehicle running smoothly again.",
-        "Serving customers from across South Lanarkshire — including Blantyre, Hamilton, Bothwell, Uddingston, Cambuslang, East Kilbride, and Rutherglen — we're the local garage people trust and recommend to their friends and family.",
+        "Serving customers from across South Lanarkshire, including Blantyre, Hamilton, Bothwell, Uddingston, Cambuslang, East Kilbride, and Rutherglen, we're the local garage people trust and recommend to their friends and family.",
       ]}
       bulletPoints={[
         "Experienced, qualified mechanics",
-        "All makes and models — cars and vans",
+        "All makes and models, cars and vans",
         "Modern diagnostic equipment",
         "Full diagnostic capabilities",
         "Honest advice and fair pricing",

@@ -9,7 +9,7 @@ export default function DiagnosticsBlantyre() {
       intro="Engine warning light on? Gallachers Car Garage in Blantyre has advanced diagnostic equipment to quickly find and fix the problem."
       paragraphs={[
         "Modern vehicles rely on complex electronic systems, and when something goes wrong, a warning light on your dashboard is often the first sign. At Gallachers Car Garage in Blantyre, we use advanced diagnostic equipment to read fault codes and pinpoint exactly what's causing the issue.",
-        "Our experienced mechanics can diagnose engine management faults, ABS issues, airbag warnings, transmission problems, and much more. We don't just read the code — we interpret it, find the root cause, and fix it properly.",
+        "Our experienced mechanics can diagnose engine management faults, ABS issues, airbag warnings, transmission problems, and much more. We don't just read the code: we interpret it, find the root cause, and fix it properly.",
         "Don't ignore warning lights. What might seem minor could lead to expensive damage if left unresolved. Bring your vehicle to us for a thorough diagnostic check and get the answers you need.",
       ]}
       bulletPoints={[

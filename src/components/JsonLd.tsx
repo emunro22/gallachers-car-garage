@@ -136,6 +136,50 @@ export function FaqJsonLd({ items }: { items: { question: string; answer: string
   );
 }
 
+export function ArticleJsonLd({
+  title,
+  description,
+  slug,
+  datePublished,
+}: {
+  title: string;
+  description: string;
+  slug: string;
+  datePublished: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    datePublished,
+    dateModified: datePublished,
+    author: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `https://${BUSINESS.domain}/logo.jpg`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://${BUSINESS.domain}/blog/${slug}`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function BreadcrumbJsonLd({ items }: { items: { name: string; href: string }[] }) {
   const schema = {
     "@context": "https://schema.org",

@@ -141,7 +141,7 @@ export default function ServiceDetailPage({
           <blockquote className="text-neutral-700 text-lg italic max-w-xl mx-auto">
             &ldquo;{REVIEWS[0].text}&rdquo;
           </blockquote>
-          <p className="text-neutral-400 text-sm mt-3">&mdash; {REVIEWS[0].name}, Google Review</p>
+          <p className="text-neutral-400 text-sm mt-3">Reviewed by {REVIEWS[0].name}, Google Review</p>
         </div>
       </section>
 

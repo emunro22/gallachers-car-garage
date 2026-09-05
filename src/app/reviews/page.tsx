@@ -45,7 +45,7 @@ export default function ReviewsPage() {
             </motion.div>
 
             <motion.p variants={fade} className="text-white/50 text-lg mt-5">
-              Don&apos;t just take our word for it — hear from real customers.
+              Don&apos;t just take our word for it. Hear from real customers.
             </motion.p>
           </motion.div>
         </div>

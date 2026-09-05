@@ -73,7 +73,7 @@ export const SERVICES = [
     title: "Timing Belts & Wet Belts",
     slug: "timing-belts",
     description:
-      "Timing belt and wet belt replacement to prevent costly engine damage. Don't risk it — get it replaced on schedule.",
+      "Timing belt and wet belt replacement to prevent costly engine damage. Don't risk it: get it replaced on schedule.",
     image: "/images/timing-belts.webp",
   },
   {

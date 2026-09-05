@@ -28,8 +28,8 @@ export default function TermsPage() {
             <p className="leading-relaxed">
               This website is provided by {BUSINESS.name} ({BUSINESS.address.full}) for
               information about our services and to allow you to make enquiries. Content is
-              provided for general information only and does not constitute a formal quote —
-              all repair and servicing prices are confirmed directly with you before work
+              provided for general information only and does not constitute a formal quote.
+              All repair and servicing prices are confirmed directly with you before work
               begins.
             </p>
           </div>

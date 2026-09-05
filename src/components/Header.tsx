@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/reviews", label: "Reviews" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -53,7 +54,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main nav — white, bigger */}
+      {/* Main nav: white, bigger */}
       <header
         className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${
           scrolled ? "shadow-lg shadow-black/8" : "shadow-sm"

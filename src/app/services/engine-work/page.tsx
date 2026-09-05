@@ -12,11 +12,11 @@ export default function Page() {
     <ServiceDetailPage
       title="Engine Work"
       heroImage="/images/engine-work.webp"
-      intro="All engine work undertaken — from head gaskets and turbo replacement to complete engine rebuilds. Petrol and diesel."
+      intro="All engine work undertaken: from head gaskets and turbo replacement to complete engine rebuilds. Petrol and diesel."
       paragraphs={[
         "Engine problems can be daunting, but we have the expertise and equipment to tackle any engine repair. Our experienced mechanics handle everything from minor work to complete rebuilds.",
         "Whether it's a blown head gasket, a faulty turbo, oil leaks, overheating, or poor performance, we'll diagnose the problem accurately and carry out the repair to get you back on the road.",
-        "We work on all engine types — petrol, diesel, turbocharged, and naturally aspirated — across all makes and models.",
+        "We work on all engine types (petrol, diesel, turbocharged, and naturally aspirated) across all makes and models.",
       ]}
       bulletPoints={[
         "Head gasket replacement",

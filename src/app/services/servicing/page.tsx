@@ -15,7 +15,7 @@ export default function Page() {
       intro="Keep your car running smoothly with comprehensive servicing. Interim and full services for all makes and models at honest prices."
       paragraphs={[
         "Regular servicing keeps your vehicle reliable, safe, and fuel-efficient. We offer both interim and full major services for all makes and models at prices that won't break the bank.",
-        "Every service includes an oil and filter change, fluid top-ups, brake checks, tyre inspections, and a thorough multi-point vehicle health check. We'll flag anything that needs attention — with no pressure to get unnecessary work done.",
+        "Every service includes an oil and filter change, fluid top-ups, brake checks, tyre inspections, and a thorough multi-point vehicle health check. We'll flag anything that needs attention, with no pressure to get unnecessary work done.",
         "We stamp your service book to maintain your vehicle's full service history, keeping your warranty valid and your resale value strong.",
       ]}
       bulletPoints={[

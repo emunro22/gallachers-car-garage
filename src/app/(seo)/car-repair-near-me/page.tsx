@@ -9,14 +9,14 @@ export default function CarRepairNearMe() {
       intro="Looking for reliable car repair near you? Gallachers Car Garage in Blantyre, South Lanarkshire offers expert car and van repairs at honest, competitive prices."
       paragraphs={[
         "If you're searching for car repair near me in Blantyre, Hamilton, Bothwell, Uddingston, Cambuslang, or anywhere in South Lanarkshire, Gallachers Car Garage is your local trusted mechanic. We handle everything from minor repairs to major engine work on all makes and models.",
-        "Our experienced mechanics use modern diagnostic equipment to quickly identify faults and get your vehicle back on the road. We believe in honest, transparent pricing — you'll always know exactly what's wrong and how much it will cost before we start any work.",
+        "Our experienced mechanics use modern diagnostic equipment to quickly identify faults and get your vehicle back on the road. We believe in honest, transparent pricing: you'll always know exactly what's wrong and how much it will cost before we start any work.",
         "Whether your car needs a simple brake pad change, a full clutch replacement, suspension work, or a complete engine rebuild, we've got you covered. We also work on vans and light commercial vehicles up to 3.5 tonnes.",
       ]}
       bulletPoints={[
         "All makes and models of cars and vans repaired",
         "Light goods vehicles up to 3.5 tonnes",
         "diagnostic centre",
-        "Full servicing — interim and major services",
+        "Full servicing: interim and major services",
         "Brakes, clutches, suspension, exhausts",
         "Timing belt and wet belt replacement",
         "Engine diagnostics and fault finding",

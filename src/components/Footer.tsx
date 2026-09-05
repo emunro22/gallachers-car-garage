@@ -18,6 +18,7 @@ const QUICK_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Reviews", href: "/reviews" },
   { label: "Contact", href: "/contact" },
+  { label: "Blog", href: "/blog" },
   { label: "Service Guides", href: "/guides" },
   { label: "Car Repair Near Me", href: "/car-repair-near-me" },
   { label: "Garage Near Me", href: "/garage-near-me-blantyre" },

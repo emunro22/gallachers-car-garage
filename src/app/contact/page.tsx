@@ -129,7 +129,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl font-extrabold text-neutral-900 mb-6">Our Location</h2>
           <p className="text-neutral-500 mb-6">
-            We&apos;re tucked just off the main road in Blantyre — search
+            We&apos;re tucked just off the main road in Blantyre, so search
             &ldquo;Gallachers Car Garage&rdquo; on Google Maps for easy directions.
           </p>
           <div className="rounded-2xl overflow-hidden h-[400px]">

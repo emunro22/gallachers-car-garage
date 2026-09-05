@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { BUSINESS } from "@/lib/constants";
+import { BLOG_POSTS } from "@/lib/blogPosts";
 
 const fade = {
   hidden: { opacity: 0, y: 20 },
@@ -13,22 +14,19 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.06 } },
 };
 
-const GUIDES = [
-  {
-    slug: "when-to-replace-a-timing-belt",
-    title: "When to Replace a Timing Belt",
-    description:
-      "How to know when your timing belt is due, and what happens if you leave it too long.",
-  },
-  {
-    slug: "signs-your-clutch-is-failing",
-    title: "Signs Your Clutch Is Failing",
-    description:
-      "The warning signs (slipping, a high biting point, a burning smell) and what to do about them.",
-  },
-];
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 
-export default function GuidesPage() {
+export default function BlogPage() {
+  const sortedPosts = [...BLOG_POSTS].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   return (
     <>
       {/* Hero */}
@@ -37,20 +35,20 @@ export default function GuidesPage() {
         <div className="relative max-w-7xl mx-auto px-6">
           <motion.div initial="hidden" animate="visible" variants={stagger} className="max-w-2xl">
             <motion.p variants={fade} className="text-primary font-semibold text-sm tracking-wide uppercase">
-              Advice
+              News &amp; Advice
             </motion.p>
             <motion.h1 variants={fade} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mt-3 leading-[1.1] tracking-tight">
-              Service Guides
+              Blog
             </motion.h1>
             <motion.p variants={fade} className="text-white/50 text-lg mt-5 leading-relaxed">
-              Straightforward advice on common car problems, from our
-              mechanics in Blantyre. No jargon, just what to look out for.
+              Servicing tips, diagnostics explained, and seasonal car care
+              from our mechanics in Blantyre.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Guides grid */}
+      {/* Posts grid */}
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
@@ -60,24 +58,31 @@ export default function GuidesPage() {
             variants={stagger}
             className="grid grid-cols-1 md:grid-cols-2 gap-5"
           >
-            {GUIDES.map((guide) => (
-              <motion.div
-                key={guide.slug}
+            {sortedPosts.map((post) => (
+              <motion.article
+                key={post.slug}
                 variants={fade}
                 className="group rounded-2xl overflow-hidden border border-gray-100 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 bg-white p-6"
               >
-                <h2 className="text-xl font-bold text-neutral-900">{guide.title}</h2>
-                <p className="text-neutral-500 mt-2 leading-relaxed text-sm">{guide.description}</p>
+                <div className="flex items-center gap-3 text-xs text-neutral-400 mb-3">
+                  <span className="uppercase tracking-wide font-semibold text-primary">
+                    {post.category}
+                  </span>
+                  <span>&middot;</span>
+                  <time dateTime={post.date}>{formatDate(post.date)}</time>
+                </div>
+                <h2 className="text-xl font-bold text-neutral-900">{post.title}</h2>
+                <p className="text-neutral-500 mt-2 leading-relaxed text-sm">{post.excerpt}</p>
                 <Link
-                  href={`/guides/${guide.slug}`}
+                  href={`/blog/${post.slug}`}
                   className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-3 group-hover:gap-2 transition-all"
                 >
-                  Read the guide
+                  Read more
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-              </motion.div>
+              </motion.article>
             ))}
           </motion.div>
         </div>
@@ -87,7 +92,7 @@ export default function GuidesPage() {
       <section className="relative py-20 bg-neutral-950 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/15 to-transparent" />
         <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-primary font-semibold text-sm tracking-wide uppercase">Not Sure What&apos;s Wrong?</p>
+          <p className="text-primary font-semibold text-sm tracking-wide uppercase">Got a Question?</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-3">
             Give us a call
           </h2>

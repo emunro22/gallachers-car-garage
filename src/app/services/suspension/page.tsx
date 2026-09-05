@@ -14,7 +14,7 @@ export default function Page() {
       heroImage="/images/suspension.webp"
       intro="Bumpy ride or knocking noises? Full suspension repairs including shock absorbers, springs, drop links, and wishbones."
       paragraphs={[
-        "Worn suspension affects your vehicle's handling, comfort, and safety. We carry out full suspension repairs on all makes and models — from shock absorbers and coil springs to drop links, anti-roll bars, and wishbones.",
+        "Worn suspension affects your vehicle's handling, comfort, and safety. We carry out full suspension repairs on all makes and models: from shock absorbers and coil springs to drop links, anti-roll bars, and wishbones.",
         "If you're hearing knocking or clunking over bumps, noticing uneven tyre wear, or your car feels bouncy or unstable, your suspension likely needs attention.",
         "With South Lanarkshire's roads, suspension wear is common. We use quality parts and ensure everything is fitted correctly for a safe, smooth ride.",
       ]}

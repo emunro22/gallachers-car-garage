@@ -14,9 +14,9 @@ export default function Page() {
       heroImage="/images/timing-belts.webp"
       intro="Don't risk catastrophic engine damage. Timing belt and wet belt replacement to manufacturer schedules at competitive prices."
       paragraphs={[
-        "A snapped timing belt can destroy your engine — costing thousands to repair. We carry out timing belt and wet belt replacement to manufacturer schedules, protecting your engine and saving you money long-term.",
+        "A snapped timing belt can destroy your engine, costing thousands to repair. We carry out timing belt and wet belt replacement to manufacturer schedules, protecting your engine and saving you money long-term.",
         "Wet belt systems, found in many modern vehicles like the Ford EcoBoost, are particularly critical. These belts run in engine oil and deteriorate faster than traditional timing belts.",
-        "We recommend replacing your timing belt at the intervals in your vehicle handbook — typically every 40,000–100,000 miles or 4–5 years. Not sure when yours was last changed? Give us a call.",
+        "We recommend replacing your timing belt at the intervals in your vehicle handbook, typically every 40,000–100,000 miles or 4–5 years. Not sure when yours was last changed? Give us a call.",
       ]}
       bulletPoints={[
         "Timing belt replacement",

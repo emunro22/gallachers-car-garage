@@ -10,7 +10,7 @@ export default function EngineRepairBlantyre() {
       paragraphs={[
         "Engine problems can be daunting, but at Gallachers Car Garage in Blantyre, we have the expertise and equipment to tackle any engine repair. Our experienced mechanics handle everything from minor engine work to complete rebuilds.",
         "Whether it's a blown head gasket, a faulty turbo, oil leaks, overheating issues, or poor performance, we'll diagnose the problem accurately and carry out the repair to get you back on the road reliably.",
-        "We work on all engine types — petrol, diesel, turbocharged, and naturally aspirated — across all makes and models of cars and vans. No job too big or too small.",
+        "We work on all engine types (petrol, diesel, turbocharged, and naturally aspirated) across all makes and models of cars and vans. No job too big or too small.",
       ]}
       bulletPoints={[
         "Head gasket replacement",
